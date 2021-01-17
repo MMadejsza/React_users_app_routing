@@ -26,6 +26,13 @@ class UsersList extends Component {
         })
     }
 
+    deleteUser = (key) => {
+        let newListUser = this.state.userList.filter(user => user.key !== key)
+        this.setState({
+            userList: newListUser
+        })
+    }
+
     render() {
         return (
             <div>
@@ -35,7 +42,7 @@ class UsersList extends Component {
                 </form>
 
                 <h2>Users List:</h2>
-                <User userList={this.state.userList}></User>
+                <User userList={this.state.userList} delete={this.deleteUser}></User>
             </div>
         )
     }
