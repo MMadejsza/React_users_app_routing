@@ -28,7 +28,7 @@ class App extends Component {
           <Route exact path="/">
             <Home path="https://cdn2.techmaniak.pl/wp-content/uploads/fotomaniak/2021/01/DSC00512.jpg"></Home>
           </Route>
-          <Route exact path="/" component={UsersList}>
+          <Route exact path="/user-list" component={UsersList}>
           </Route>
 
         </Router>
