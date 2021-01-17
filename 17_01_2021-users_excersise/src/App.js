@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Components/Home'
 import UsersList from './Components/UsersList';
+import Logo from './Logo.jpg'
 
 class App extends Component {
   render() {
@@ -25,7 +26,7 @@ class App extends Component {
 
 
           <Route exact path="/">
-            <Home img=""></Home>
+            <Home path="https://cdn2.techmaniak.pl/wp-content/uploads/fotomaniak/2021/01/DSC00512.jpg"></Home>
           </Route>
           <Route exact path="/" component={UsersList}>
           </Route>

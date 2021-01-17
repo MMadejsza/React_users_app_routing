@@ -3,10 +3,10 @@ import './Home.css';
 
 class Home extends Component {
 
-    render() {
+    render(props) {
         return (
             <div className="content">
-                Home
+                <img src={this.props.path} />
             </div>
         )
     }
