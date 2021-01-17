@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.scss';
+import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Components/Home'
 import UsersList from './Components/UsersList';
@@ -8,15 +8,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <Router>
-          <Link to="/">
-            <p className="container">Home</p>
-          </Link>
-          <Link to="/user-list">
-            <p className="container">User List</p>
-          </Link>
+          <ul>
+            <li>
+              <Link to="/">
+                <p className="container">Home</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="/user-list">
+                <p className="container">User List</p>
+              </Link>
+            </li>
+          </ul>
+
+
           <Route exact path="/">
-            <Home></Home>
+            <Home img=""></Home>
           </Route>
           <Route exact path="/" component={UsersList}>
           </Route>

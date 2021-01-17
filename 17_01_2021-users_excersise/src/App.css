@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 15px;
+  padding: 0;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+li:hover {
+  background-color: grey;
+}
+
+a {
+  text-decoration: none;
+}
