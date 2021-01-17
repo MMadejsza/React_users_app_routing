@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import './Components/Home'
-import './Components/UsersList'
+import Home from './Components/Home'
+import UsersList from './Components/UsersList';
 
 class App extends Component {
   render() {
@@ -11,11 +10,16 @@ class App extends Component {
       <div className="App">
         <Router>
           <Link to="/">
-            <p>Home</p>
+            <p className="container">Home</p>
           </Link>
           <Link to="/user-list">
-            <p>User List</p>
+            <p className="container">User List</p>
           </Link>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route exact path="/" component={UsersList}>
+          </Route>
 
         </Router>
       </div>
