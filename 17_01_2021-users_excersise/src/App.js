@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
+import { BrowserRouter as Router, Route, Link } from 'react-dom';
+import './Components/Home'
+import './Components/UsersList'
 
 class App extends Component {
   render() {
