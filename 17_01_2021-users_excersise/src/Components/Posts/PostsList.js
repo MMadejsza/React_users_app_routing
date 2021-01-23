@@ -29,8 +29,7 @@ class PostList extends Component {
             return <OnePost onePost={item} key={index}></OnePost>
         })
         return (
-            <div>
-
+            <div className="app-content">
                 {onePost}
             </div>
         )

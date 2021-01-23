@@ -24,3 +24,9 @@ li:hover {
 a {
   text-decoration: none;
 }
+
+.app-content {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

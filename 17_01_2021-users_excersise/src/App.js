@@ -10,7 +10,7 @@ import axios from 'axios'
 class App extends Component {
   render() {
     return (
-      <div className="app-content">
+      <div >
 
         <Router>
           <ul>
@@ -32,16 +32,18 @@ class App extends Component {
           </ul>
 
 
-          <Route exact path="/">
-            <Home path="https://cdn2.techmaniak.pl/wp-content/uploads/fotomaniak/2021/01/DSC00512.jpg"></Home>
-          </Route>
-          <Route exact path="/user-list" component={UsersList}>
-          </Route>
-          <Route exact path="/posts">
-            <PostsList></PostsList>
-          </Route>
+          <div>
+            <Route exact path="/">
+              <Home path="https://cdn2.techmaniak.pl/wp-content/uploads/fotomaniak/2021/01/DSC00512.jpg"></Home>
+            </Route>
+            <Route exact path="/user-list" component={UsersList}>
+            </Route>
+            <Route exact path="/posts">
+              <PostsList></PostsList>
+            </Route>
+          </div>
         </Router>
-      </div>
+      </div >
     );
   }
 }
