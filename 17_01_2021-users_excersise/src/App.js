@@ -10,7 +10,7 @@ import axios from 'axios'
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app-content">
 
         <Router>
           <ul>
