@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Components/Home'
 import UsersList from './Components/UsersList';
+import PostsList from './Components/Posts/PostsList'
 // import Logo from './Logo.jpg'
 import axios from 'axios'
 
@@ -25,7 +26,7 @@ class App extends Component {
             </li>
             <li>
               <Link to="/posts">
-                <p>Posts</p>
+                <p className="container">Posts</p>
               </Link>
             </li>
           </ul>
@@ -37,7 +38,7 @@ class App extends Component {
           <Route exact path="/user-list" component={UsersList}>
           </Route>
           <Route exact path="/posts">
-
+            <PostsList></PostsList>
           </Route>
         </Router>
       </div>

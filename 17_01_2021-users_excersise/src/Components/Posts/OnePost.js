@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ContentPostsCard from './ComponentsPosts/ContentPostsCard'
 class OnePost extends Component {
     constructor(props) {
         super(props)
@@ -55,10 +56,13 @@ class OnePost extends Component {
     render() {
         return (
             <div className="card">
-                <div className=""></div>
+                <div className="card-body">
+                    <ContentPostsCard content={this.props.onePost.title} classCss="title"></ContentPostsCard>
+                    <ContentPostsCard content={this.props.onePost.title} classCss="body"></ContentPostsCard>
+                    <ContentPostsCard content={this.props.onePost.title} classCss="author"></ContentPostsCard>
+                </div>
             </div>
         )
     }
-
-
 }
+export default OnePost
