@@ -3,7 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Components/Home'
 import UsersList from './Components/UsersList';
-import Logo from './Logo.jpg'
+// import Logo from './Logo.jpg'
+import axios from 'axios'
 
 class App extends Component {
   render() {
@@ -22,6 +23,11 @@ class App extends Component {
                 <p className="container">User List</p>
               </Link>
             </li>
+            <li>
+              <Link to="/posts">
+                <p>Posts</p>
+              </Link>
+            </li>
           </ul>
 
 
@@ -30,7 +36,9 @@ class App extends Component {
           </Route>
           <Route exact path="/user-list" component={UsersList}>
           </Route>
+          <Route exact path="/posts">
 
+          </Route>
         </Router>
       </div>
     );

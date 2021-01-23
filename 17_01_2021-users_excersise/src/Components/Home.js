@@ -6,7 +6,7 @@ class Home extends Component {
     render(props) {
         return (
             <div className="content">
-                <img src={this.props.path} />
+                <img src={this.props.path} alt="photo" />
             </div>
         )
     }
