@@ -5,10 +5,7 @@ class UsersList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            userList: [
-
-
-            ]
+            userList: []
         }
     }
 
@@ -37,7 +34,7 @@ class UsersList extends Component {
         return (
             <div>
                 <form onSubmit={this.addUser}>
-                    <input ref={(inputContent) => { this.inputContent = inputContent }} type="text"></input>
+                    <input ref={(inputObject) => { this.inputContent = inputObject }} type="text"></input>
                     <button type="submit">Add User</button>
                 </form>
 

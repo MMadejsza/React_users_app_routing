@@ -10,8 +10,7 @@ import axios from 'axios'
 class App extends Component {
   render() {
     return (
-      <div >
-
+      <div>
         <Router>
           <ul>
             <li>
@@ -43,7 +42,7 @@ class App extends Component {
             </Route>
           </div>
         </Router>
-      </div >
+      </div>
     );
   }
 }
