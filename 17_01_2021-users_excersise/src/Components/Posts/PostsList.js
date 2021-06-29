@@ -10,7 +10,7 @@ class PostList extends Component {
         }
     }
 
-    componentDidMount() { //Ten cykl służy do strzelania do api
+    componentDidMount() { //This cycle is for get API
         this.getPost()
     }
     getPost() {

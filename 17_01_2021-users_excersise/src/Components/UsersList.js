@@ -16,7 +16,7 @@ class UsersList extends Component {
             name: this.inputContent.value,
             key: Date.now()
         }
-        this.setState((prevState) => { //prevState jest readonly
+        this.setState((prevState) => { //prevState is readonly
             return {
                 userList: prevState.userList.concat(user)
             }
@@ -35,7 +35,7 @@ class UsersList extends Component {
             <div>
                 <form onSubmit={this.addUser}>
                     <input ref={(inputObject) => { this.inputContent = inputObject }} type="text"></input>
-                    <button type="submit">Add User</button>
+                    <button type="submit">Add User</button><span> To delete user, click on his name.</span>
                 </form>
 
                 <h2>Users List:</h2>
